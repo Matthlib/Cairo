@@ -16,7 +16,9 @@ async def test_increase_balance():
     # Create a new Starknet class that simulates the StarkNet
     # system.
     starknet = await Starknet.empty()
+ 
 
+ 
     # Deploy the contract.
     contract = await starknet.deploy(
         source=CONTRACT_FILE,
